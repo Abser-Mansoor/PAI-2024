@@ -1,8 +1,6 @@
-students = 
-{
+students = {
     "Abser" : [20,10,20]
 }
-
 def addgrade(name, grade):
     if name in students:
         students[name].append(grade)
@@ -19,20 +17,22 @@ def average(name):
     else:
         print("Student " + name + " not found.")
 
-def addstudent(name):
+def addstudent(name,grades = []):
     if name not in students:
-        students[name] = []
+        students[name] = grades
     else:
-        print(f"Student {student_name} already exists.")
+        print("Student " + str(name) + " already exists.")
 
 def removestudent(name):
-    name in students:
+    if name in students:
         del students[name]
         print("Student " + name + " has been removed.")
     else:
         print("Student " + name + " not found.")
     
-def main() : 
-    addgrade("Abser", [10])
-    addstudent("Owais",[100,90,90])
-    average("Owais")
+addgrade("Abser", 100)
+print(students)
+addstudent("Owais",[100,90,90])
+print(students)
+print("Average grade of Owais is: " + str(average("Owais")))
+addstudent("Owais")
