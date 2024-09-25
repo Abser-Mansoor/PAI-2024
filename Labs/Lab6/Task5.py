@@ -1,5 +1,4 @@
 import pandas as pd
 
-df = pd.read_csv('World Alcoholic Consumption datasets.csv')
-print(df)
-print(df.columns)
+df = pd.read_csv('alcohol-consumption-vs-gdp-per-capita.csv')
+print(df.loc[30:49])
