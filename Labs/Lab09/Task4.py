@@ -18,7 +18,7 @@ age_counts = df['Age Groups'].value_counts()
 age_counts = age_counts.dropna()
 
 plt.figure(figsize=(8, 6))
-plt.pie(age_counts, labels=age_counts.index, autopct='%1.1f%%', startangle=140)
+plt.pie(age_counts, labels=age_counts.index, autopct='%1.1f%%')
 plt.title('Distribution of Patient Ages')
 plt.axis('equal')
 plt.show()
