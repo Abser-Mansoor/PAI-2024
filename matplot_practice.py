@@ -27,3 +27,5 @@ plt.boxplot([np.arange(0,101,10),np.arange(0,101,5)],vert=False,showmeans=True,l
 plt.subplot(2,3,6)
 plt.stem([1,2,3,4,5,6],[2,3,4,5,6,7],linefmt=':',markerfmt='o')
 plt.show()
+plt.bar(['Data 1','Data 2', 'Data 3', 'Data 4', 'Data 5', 'Data 6'],np.random.randint(0,100,size=6),color='r',linewidth=[1,2,3,4,5,6],edgecolor=['green','blue','cyan','black','magenta','yellow'])
+plt.show()
